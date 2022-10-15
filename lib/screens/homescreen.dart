@@ -27,12 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Container(
         color: Theme.of(context).primaryColor,
-        child: Column(
-          children: <Widget>[
-            SwipeCardWidget(),
-            SliderWidget(),
-          ],
-        ),
+        child: SwipeCardWidget(),
       ),
       drawer: Drawer(child: ListView()),
       bottomNavigationBar: BottomNavigationBar(
