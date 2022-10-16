@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'screens/homescreen.dart';
 
+import 'screens/Community_screen.dart';
+import 'screens/PDFMaker_screen.dart';
+import 'screens/PhotoTagging_screen.dart';
+import 'screens/Reminder_screen.dart';
+import 'screens/ToDo_screen.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -40,6 +46,13 @@ class MyApp extends StatelessWidget {
         iconTheme: IconThemeData(color: Color.fromRGBO(255, 168, 0, 1)),
       ),
       home: HomeScreen(),
+      routes: {
+        '/ToDo': (ctx) => ToDo_screen(),
+        '/Reminder': (ctx) => Reminder_screen(),
+        '/Photo-Tagging': (ctx) => PhotoTagging_screen(),
+        '/PDF-Maker': (ctx) => PDFMaker_screen(),
+        '/Community': (ctx) => Community_Screen(),
+      },
     );
   }
 }
